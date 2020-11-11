@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/toolbarbackground"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="5dp"
+            app:title="YouTubeStats"
+            app:titleTextColor="#fff" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:gravity="center"
+            android:layout_marginTop="210dp"
+            android:text="Search among millions of channels
+                                with just a click!"
+            android:textColor="#FF0000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/youtube" />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etChannel"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/inputboxstyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:gravity="start|center"
+                    android:hint="Search a Channel"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#333"
+                    android:textColorHint="#333"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/buttonstyleoval"
+                android:text="Go"
+                android:textColor="@android:color/white" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvSearchResults"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="30dp"
+            android:paddingTop="20dp"
+            android:text="Search Results"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lvChannels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/channel"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_marginTop="80dp">
+
+        </ListView>
+
+    </FrameLayout>
+
+</LinearLayout>
