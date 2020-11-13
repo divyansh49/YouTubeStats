@@ -10,4 +10,5 @@ An Android application which provides analytics of a YouTube channel, implemente
 5. Submit a pull request :D
 
 ## Screenshots
-<img src="https://github.com/divyansh49/YouTubeStats/blob/master/Screenshots/MainActivity.jpg" alt="MainActivity" width="250" height="400"> 
+<img src="https://github.com/divyansh49/YouTubeStats/blob/master/Screenshots/MainActivity.jpg" alt="MainActivity" width="250" height="400"> <img src="https://github.com/divyansh49/YouTubeStats/blob/master/Screenshots/StatsActivity.jpg" alt="StatsActivity" width="250" height="400"> 
+
